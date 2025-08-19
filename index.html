@@ -1,117 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Korea Trip Itinerary</title>
-  <link rel="stylesheet" href="style.css" />
-  <script>
-    function openTab(evt, tabName) {
-      let i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-  </script>
-</head>
-<body>
-  <h1>🇰🇷 Korea Trip 2025</h1>
+<div id="Itinerary" class="tabcontent">
+  <h2>Trip Overview</h2>
+  <table>
+    <tr><td>Trip start date</td><td>21/11/2025 SQ616</td><td>Name</td><td>Luggage</td></tr>
+    <tr><td>Trip end date</td><td>30/11/2025 SQ605</td><td>Mum</td><td></td></tr>
+    <tr><td>Duration</td><td>8D7N</td><td>Jared</td><td>1 large, 2 medium, 3 small</td></tr>
+    <tr><td>No. of travelers</td><td>4A 1C</td><td>Jocelyn</td><td></td></tr>
+    <tr><td>Apps</td><td>Kakao, Naver Maps, Papago</td><td>Amelia</td><td>2 big, 1 small – Samsonite 1</td></tr>
+    <tr><td></td><td></td><td>Yong Jun</td><td></td></tr>
+    <tr><td></td><td></td><td>Kyler</td><td></td></tr>
+  </table>
 
-  <!-- Tab buttons -->
-  <div class="tab">
-    <button class="tablinks" onclick="openTab(event, 'Itinerary')" id="defaultOpen">Itinerary</button>
-    <button class="tablinks" onclick="openTab(event, 'SeoulMRT')">Seoul MRT</button>
-    <button class="tablinks" onclick="openTab(event, 'BusanMRT')">Busan MRT</button>
-    <button class="tablinks" onclick="openTab(event, 'AREX')">AREX</button>
-    <button class="tablinks" onclick="openTab(event, 'Info')">Other Info</button>
-  </div>
-
-  <!-- Tab 1: Itinerary -->
-  <div id="Itinerary" class="tabcontent">
-    <h2>Trip Overview</h2>
-    <table>
-      <tr><td>Trip start date</td><td>21/11/2025 SQ616</td><td>Name</td><td>Lugguages</td></tr>
-      <tr><td>Trip end date</td><td>30/11/2025 SQ605</td><td>Mum</td><td></td></tr>
-      <tr><td>Duration</td><td>8D7N</td><td>Jared</td><td>1 large 2 medium 3 small</td></tr>
-      <tr><td>No. of travelers</td><td>4A 1C</td><td>Jocelyn</td><td></td></tr>
-      <tr><td>Apps</td><td>Kakao, Naver Maps, Papago</td><td>Amelia</td><td>2 big 1 small</td></tr>
-      <tr><td></td><td></td><td>Yong Jun</td><td></td></tr>
-      <tr><td></td><td></td><td>Kyler</td><td></td></tr>
-    </table>
-
-    <h2>Daily Itinerary</h2>
+  <h2>Daily Itinerary</h2>
+  <div style="max-height:600px; overflow-y:auto; border:1px solid #ddd; padding:10px;">
     <table>
       <tr><th>Date</th><th>Destination</th><th>Details</th><th>Notes/Links</th></tr>
+
+      <!-- Day 0 -->
       <tr>
-        <td>11/21/2025 - Fri</td>
-        <td>SIN → PUS (SQ616)</td>
-        <td>11:30pm Departure</td>
+        <td>11/21/2025 (Fri)</td>
+        <td>SIN → Busan</td>
+        <td>Flight SQ616, 11:30pm Departure</td>
         <td></td>
       </tr>
+
+      <!-- Day 1 -->
       <tr>
-        <td>11/22/2025 - Sat</td>
+        <td>11/22/2025 (Sat)</td>
         <td>Busan Day 1 (East Busan)</td>
-        <td>Arrival 6:35am, buy T-money card, Airbnb check-in at Gwangan, visit Haedong Yonggungsa Temple, Sky Capsule, Cheongsapo, Haeundae Market</td>
-        <td><a href="https://naver.me/xNlZbiF1" target="_blank">Airbnb Link</a></td>
+        <td>
+          - Land PUS 6:35am<br>
+          - Buy T-money card<br>
+          - Airbnb: Gwangan KCC Switzen Harbor View (Check-in 4pm)<br>
+          - Luggage storage (짐캐리 near Busan Station)<br>
+          - Gwangalli M Drone Light Show (7pm/9pm)<br>
+          - Sky Luge, Lotte Dongbusan, Haedong Yonggungsa Temple<br>
+          - Sky Capsule (Mipo ↔ Cheongsapo)<br>
+          - Cheongsapo Twin Lighthouse, Seafood Town<br>
+          - Haeundae Market
+        </td>
+        <td>
+          <a href="https://maps.app.goo.gl/ytNFvy5BKXUR9JEc6">Airbnb</a><br>
+          <a href="https://naver.me/xNlZbiF1">Naver Map</a><br>
+          <a href="https://www.koreatodo.com/gwangalli-beach">Drone Show</a><br>
+          <a href="https://www.koreatodo.com/cheongsapo-seafood-town">Cheongsapo</a><br>
+          <a href="https://www.koreatodo.com/haeundae-market">Haeundae Market</a>
+        </td>
       </tr>
-      <!-- Continue filling itinerary rows here -->
+
+      <!-- Day 2 -->
+      <tr>
+        <td>11/23/2025 (Sun)</td>
+        <td>Busan Day 2 (Central Busan)</td>
+        <td>
+          - Gamcheon Culture Village (Little Prince)<br>
+          - BIFF Square<br>
+          - Gukje Market / Gwangbok-ro Fashion Street<br>
+          - Yeongdo Bridge (Lifting Bridge)
+        </td>
+        <td>
+          <a href="https://www.koreatodo.com/gamcheon-culture-village">Gamcheon Info</a>
+        </td>
+      </tr>
+
+      <!-- Day 3 -->
+      <tr>
+        <td>11/24/2025 (Mon)</td>
+        <td>Busan → Seoul (Day 1)</td>
+        <td>
+          - KTX Busan → Seoul (≈2h45m, around 12:30pm/1pm)<br>
+          - Airbnb Yoni House (near Seoul Station)<br>
+          - Visit Myeongdong, Namsan Tower
+        </td>
+        <td>
+          <a href="https://www.seoulmetro.co.kr">Seoul Metro</a><br>
+          <a href="https://www.korail.com/global/eng/ticket">Korail Tickets</a>
+        </td>
+      </tr>
+
+      <!-- Day 4 -->
+      <tr>
+        <td>11/25/2025 (Tue)</td>
+        <td>Seoul Day 2 – Seongsu/Gangnam</td>
+        <td>
+          - Seoul Station → Seongsu (Line 2)<br>
+          - Explore cafes & shops (Dasique, Tamburins, Onion Café, etc.)<br>
+          - Seongsu → Samseong (COEX / T1 Building)<br>
+          - Dinner @ Jeju Rooftop Black BBQ
+        </td>
+        <td>Address: 34 Eonju-ro 170-gil, Gangnam</td>
+      </tr>
+
+      <!-- Day 5 -->
+      <tr>
+        <td>11/26/2025 (Wed)</td>
+        <td>Seoul Day 3</td>
+        <td>
+          - Mangwon Market (street food)<br>
+          - Zoolung Zoolung (Times Square)<br>
+          - The Hyundai Seoul (We.Pet 5F)<br>
+          - Yeouido Hangang Park<br>
+          - Optional Hongdae
+        </td>
+        <td></td>
+      </tr>
+
+      <!-- Day 6 -->
+      <tr>
+        <td>11/27/2025 (Thu)</td>
+        <td>Seoul Day 4 (Tour)</td>
+        <td>
+          - Alpaca World<br>
+          - Nami Island<br>
+          - Gangchon Rail Bike<br>
+          - Garden of Morning Calm<br>
+          <i>Driver: Xiao Jin (WA +82 10 85684599)</i>
+        </td>
+        <td>Tour booked – 300k KRW cash</td>
+      </tr>
+
+      <!-- Day 7 -->
+      <tr>
+        <td>11/28/2025 (Fri)</td>
+        <td>Seoul Day 5 – Suwon</td>
+        <td>
+          - ITX to Suwon (31 mins)<br>
+          - Hwaseong Fortress + Martial Arts Show (11am)<br>
+          - Fortress Wall Walk / Tourist Train<br>
+          - Starfield Suwon (library, shops, Molly’s pet shop)<br>
+          - Dinner / café options<br>
+          - Return to Seoul → Dongdaemun Night Market
+        </td>
+        <td>
+          <a href="https://www.koreatodo.com/everland">Everland/Suwon Info</a>
+        </td>
+      </tr>
+
+      <!-- Day 8 -->
+      <tr>
+        <td>11/29/2025 (Sat)</td>
+        <td>Seoul Day 6 (Final Day)</td>
+        <td>
+          - Gwangjang Market<br>
+          - Gyeongbokgung Palace (hanbok rental optional)<br>
+          - Bukchon Hanok Village<br>
+          - Lunch @ 꿀밥상 Honey Table<br>
+          - Last Minute Shopping (Lotte Mart @ Seoul Station, Myeongdong, Hongdae)<br>
+          - Travel to ICN (leave Seoul Station by 6:30pm)<br>
+          - SQ605 11:15pm flight to Singapore
+        </td>
+        <td></td>
+      </tr>
+
     </table>
   </div>
-
-  <!-- Tab 2: Seoul MRT -->
-  <div id="SeoulMRT" class="tabcontent">
-    <h2>Seoul MRT Map</h2>
-    <img src="images/seoul-mrt.jpg" alt="Seoul MRT Map" style="max-width:100%;">
-  </div>
-
-  <!-- Tab 3: Busan MRT -->
-  <div id="BusanMRT" class="tabcontent">
-    <h2>Busan MRT Map</h2>
-    <img src="images/busan-mrt.jpg" alt="Busan MRT Map" style="max-width:100%;">
-    <p><b>Cultural Village - Little Prince:</b><br>
-    Exit 6 of Goejeong Station on Line 1 → Transfer to Village Bus Saha 1 or Saha 1-1 → Get off at Gamjeong Elementary School → 5 min walk.</p>
-  </div>
-
-  <!-- Tab 4: AREX -->
-  <div id="AREX" class="tabcontent">
-    <h2>AREX Airport Express Map</h2>
-    <img src="images/arex.jpg" alt="AREX Map" style="max-width:100%;">
-  </div>
-
-  <!-- Tab 5: Info -->
-  <div id="Info" class="tabcontent">
-    <h2>Other Information</h2>
-    <table>
-      <tr><th>Seoul</th><th>Busan</th></tr>
-      <tr><td>Everland</td><td>Sky Lunge</td></tr>
-      <tr><td>Seongsu (café, shopping)</td><td>Capsule Cabin</td></tr>
-      <tr><td>Myeongdong</td><td>Shinsegae Simon Outlet</td></tr>
-      <tr><td>Namsan Tower</td><td>Gwangbok-ro Fashion Street</td></tr>
-      <tr><td>Alpaca World</td><td>Haedong Yonggungsa Temple</td></tr>
-      <!-- Continue table -->
-    </table>
-
-    <h3>Expenses</h3>
-    <table>
-      <tr><th>Item</th><th>Paid</th><th>Balance</th><th>Total</th></tr>
-      <tr><td>Seoul Airbnb</td><td>$894.92</td><td>$691.98</td><td>$1,586.90</td></tr>
-      <tr><td>Busan Airbnb</td><td>$301.82</td><td>$363.14</td><td>$664.96</td></tr>
-      <tr><td>Driver - Nami Island</td><td></td><td>300k KRW</td><td></td></tr>
-    </table>
-
-    <h3>Suwon Fortress Map</h3>
-    <img src="images/suwon-fortress.jpg" alt="Suwon Fortress Map" style="max-width:100%;">
-  </div>
-
-  <script>
-    // Open default tab on page load
-    document.getElementById("defaultOpen").click();
-  </script>
-</body>
-</html>
+</div>
