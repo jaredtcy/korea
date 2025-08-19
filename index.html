@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Korea Trip Itinerary</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function openTab(evt, tabName) {
+      let i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+</head>
+<body>
+  <h1>🇰🇷 Korea Trip 2025</h1>
+
+  <!-- Tab buttons -->
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Itinerary')" id="defaultOpen">Itinerary</button>
+    <button class="tablinks" onclick="openTab(event, 'SeoulMRT')">Seoul MRT</button>
+    <button class="tablinks" onclick="openTab(event, 'BusanMRT')">Busan MRT</button>
+    <button class="tablinks" onclick="openTab(event, 'AREX')">AREX</button>
+    <button class="tablinks" onclick="openTab(event, 'Info')">Other Info</button>
+  </div>
+
+  <!-- Tab 1: Itinerary -->
+  <div id="Itinerary" class="tabcontent">
+    <h2>Trip Overview</h2>
+    <table>
+      <tr><td>Trip start date</td><td>21/11/2025 SQ616</td><td>Name</td><td>Lugguages</td></tr>
+      <tr><td>Trip end date</td><td>30/11/2025 SQ605</td><td>Mum</td><td></td></tr>
+      <tr><td>Duration</td><td>8D7N</td><td>Jared</td><td>1 large 2 medium 3 small</td></tr>
+      <tr><td>No. of travelers</td><td>4A 1C</td><td>Jocelyn</td><td></td></tr>
+      <tr><td>Apps</td><td>Kakao, Naver Maps, Papago</td><td>Amelia</td><td>2 big 1 small</td></tr>
+      <tr><td></td><td></td><td>Yong Jun</td><td></td></tr>
+      <tr><td></td><td></td><td>Kyler</td><td></td></tr>
+    </table>
+
+    <h2>Daily Itinerary</h2>
+    <table>
+      <tr><th>Date</th><th>Destination</th><th>Details</th><th>Notes/Links</th></tr>
+      <tr>
+        <td>11/21/2025 - Fri</td>
+        <td>SIN → PUS (SQ616)</td>
+        <td>11:30pm Departure</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>11/22/2025 - Sat</td>
+        <td>Busan Day 1 (East Busan)</td>
+        <td>Arrival 6:35am, buy T-money card, Airbnb check-in at Gwangan, visit Haedong Yonggungsa Temple, Sky Capsule, Cheongsapo, Haeundae Market</td>
+        <td><a href="https://naver.me/xNlZbiF1" target="_blank">Airbnb Link</a></td>
+      </tr>
+      <!-- Continue filling itinerary rows here -->
+    </table>
+  </div>
+
+  <!-- Tab 2: Seoul MRT -->
+  <div id="SeoulMRT" class="tabcontent">
+    <h2>Seoul MRT Map</h2>
+    <img src="images/seoul-mrt.jpg" alt="Seoul MRT Map" style="max-width:100%;">
+  </div>
+
+  <!-- Tab 3: Busan MRT -->
+  <div id="BusanMRT" class="tabcontent">
+    <h2>Busan MRT Map</h2>
+    <img src="images/busan-mrt.jpg" alt="Busan MRT Map" style="max-width:100%;">
+    <p><b>Cultural Village - Little Prince:</b><br>
+    Exit 6 of Goejeong Station on Line 1 → Transfer to Village Bus Saha 1 or Saha 1-1 → Get off at Gamjeong Elementary School → 5 min walk.</p>
+  </div>
+
+  <!-- Tab 4: AREX -->
+  <div id="AREX" class="tabcontent">
+    <h2>AREX Airport Express Map</h2>
+    <img src="images/arex.jpg" alt="AREX Map" style="max-width:100%;">
+  </div>
+
+  <!-- Tab 5: Info -->
+  <div id="Info" class="tabcontent">
+    <h2>Other Information</h2>
+    <table>
+      <tr><th>Seoul</th><th>Busan</th></tr>
+      <tr><td>Everland</td><td>Sky Lunge</td></tr>
+      <tr><td>Seongsu (café, shopping)</td><td>Capsule Cabin</td></tr>
+      <tr><td>Myeongdong</td><td>Shinsegae Simon Outlet</td></tr>
+      <tr><td>Namsan Tower</td><td>Gwangbok-ro Fashion Street</td></tr>
+      <tr><td>Alpaca World</td><td>Haedong Yonggungsa Temple</td></tr>
+      <!-- Continue table -->
+    </table>
+
+    <h3>Expenses</h3>
+    <table>
+      <tr><th>Item</th><th>Paid</th><th>Balance</th><th>Total</th></tr>
+      <tr><td>Seoul Airbnb</td><td>$894.92</td><td>$691.98</td><td>$1,586.90</td></tr>
+      <tr><td>Busan Airbnb</td><td>$301.82</td><td>$363.14</td><td>$664.96</td></tr>
+      <tr><td>Driver - Nami Island</td><td></td><td>300k KRW</td><td></td></tr>
+    </table>
+
+    <h3>Suwon Fortress Map</h3>
+    <img src="images/suwon-fortress.jpg" alt="Suwon Fortress Map" style="max-width:100%;">
+  </div>
+
+  <script>
+    // Open default tab on page load
+    document.getElementById("defaultOpen").click();
+  </script>
+</body>
+</html>
